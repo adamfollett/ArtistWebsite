@@ -1,0 +1,1239 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Barbara Pratt : Collected Works</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="photoswipe/photoswipe.min.css">
+        <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+        <link rel="stylesheet" href="css/main.min.css">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Scripts -->
+        <script>
+            function chooseStyle() {
+              var css = new Array('train','ship','dancer');
+              var i = Math.floor(Math.random()*css.length);
+              var style = css[i];
+              theme = style;
+              return style;
+            }
+
+            document.write('<link rel="stylesheet" href="css/'+chooseStyle()+'.min.css" type="text/css">');
+
+                function nocontext(e) {
+                    var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+                    if (clickedTag == "IMG") {
+                        //alert(alertMsg);
+                        return false;
+                    }
+                }
+                var alertMsg = "Image context menu is disabled";
+                document.oncontextmenu = nocontext;
+
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!--Menu-->
+        <section id="header" data-speed="2" data-type="background">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12">
+                        <a href="/">
+                            <div class="logo"></div>
+                        </a>
+                        <div class="mainMenu">
+                            <ul>
+                                <li>
+                                    <a id="artwork" href="#">Artwork</a>
+                                </li>
+                                <li>
+                                    <a id="about" href="#">About</a>
+                                </li>
+                                <li>
+                                    <a id="contact" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Menu-->
+
+        <!--Banner-->
+        <section id="banner" data-speed="1.5" data-type="background">
+            <img src="img/hidden.png" alt="Hidden" />
+        </section>
+        <div id="bannerMobile" class="row">
+            <img src="img/shipBGm.jpg" alt="Banner Image" />
+        </div>
+        <div id="sticky-anchor"></div><!--Anchor for Scroll-->
+        <!--End Banner-->
+
+        <!--Content-->
+        <section id="mainContent" data-speed="2" data-type="background">
+            <a id="artworkLink" name="artwork"></a>
+            <div class="row filterRow  hidden-xs hidden-sm">
+                <div class="container">
+                    <div class="col-md-12">
+                        <!-- Gallery Filters -->
+                        <ul class="controls">
+                          <li class="filter" data-filter="all">
+                            <a href="#">All</a>
+                          </li>
+                            <li class="filter" data-filter=".fav">
+                            <a href="#">Favourites</a>
+                          </li>
+                          <li class="filter" data-filter=".dancers">
+                            <a href="#">Dancers</a>
+                          </li>
+                          <li class="filter" data-filter=".ships">
+                            <a href="#">Ships</a>
+                          </li>
+                          <li class="filter spacer" data-filter=".trains">
+                            <a href="#">Trains</a>
+                          </li>
+                          <li class="filter filterRight" data-filter=".archive">
+                            <a href="#">Archive</a>
+                          </li>
+                          <li class="filter filterRight" data-filter=".fashion">
+                            <a href="#">Fashion</a>
+                          </li>
+                          <li class="filter filterRight" data-filter=".flowers">
+                            <a href="#">Flowers</a>
+                          </li>
+                          <li class="filter filterRight" data-filter=".women">
+                            <a href="#">Women</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobileRow visible-sm-block visible-xs-block">
+                <div class="container">
+                    <div class="col-md-12">
+                        <!-- Gallery Filters -->
+                        <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+                            <span>Artwork </span>
+                            <ul class="dropdown" tabindex="1">
+                              <li class="filter" data-filter="all">
+                                <a href="#">All</a>
+                              </li>
+                                <li class="filter" data-filter=".fav">
+                                <a href="#">Favourites</a>
+                              </li>
+                              <li class="filter" data-filter=".dancers">
+                                <a href="#">Dancers</a>
+                              </li>
+                              <li class="filter" data-filter=".ships">
+                                <a href="#">Ships</a>
+                              </li>
+                              <li class="filter" data-filter=".trains">
+                                <a href="#">Trains</a>
+                              </li>
+                              <li class="filter" data-filter=".archive">
+                                <a href="#">Archive</a>
+                              </li>
+                              <li class="filter" data-filter=".fashion">
+                                <a href="#">Fashion</a>
+                              </li>
+                              <li class="filter" data-filter=".flowers">
+                                <a href="#">Flowers</a>
+                              </li>
+                              <li class="filter" data-filter=".women">
+                                <a href="#">Women</a>
+                              </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12">
+                    <!-- Gallery Items -->
+                    <div id="Container" class="grid my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <!--WOMEN SECTION STARTS-->
+
+                        <figure class="effect-honey mix dancers" data-myorder="1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/1.jpg" itemprop="contentUrl" data-size="564x696">
+                                <img src="img/gallery/girls/thumb/1.jpg" itemprop="thumbnail" alt="Dancer at Centre Stage"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>22x18 - 2014<br></i>Dancer at Centre Stage</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/2.jpg" itemprop="contentUrl" data-size="702x700">
+                                <img src="img/gallery/girls/thumb/2.jpg" itemprop="thumbnail" alt="Little Dancers in the Wings"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2014<br></i>Little Dancers in the Wings</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/3.jpg" itemprop="contentUrl" data-size="510x700">
+                                <img src="img/gallery/girls/thumb/3.jpg" itemprop="thumbnail" alt="Girls Embracing"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x18 - 2014<br></i>Girls Embracing</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/4.jpg" itemprop="contentUrl" data-size="750x756">
+                                <img src="img/gallery/girls/thumb/4.jpg" itemprop="thumbnail" alt="Blue Girl"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2015<br></i>Blue Girl</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/5.jpg" itemprop="contentUrl" data-size="542x750">
+                                <img src="img/gallery/girls/thumb/5.jpg" itemprop="thumbnail" alt="Erin Kenny"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>22x16 - 2014<br></i>Erin Kenny</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/6.jpg" itemprop="contentUrl" data-size="536x750">
+                                <img src="img/gallery/girls/thumb/6.jpg" itemprop="thumbnail" alt="Little Ballerina"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>14x10 - 2014<br></i>Little Ballerina</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/7.jpg" itemprop="contentUrl" data-size="742x750">
+                                <img src="img/gallery/girls/thumb/7.jpg" itemprop="thumbnail" alt="On Pointe"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2015<br></i>On Pointe</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/8.jpg" itemprop="contentUrl" data-size="537x750">
+                                <img src="img/gallery/girls/thumb/8.jpg" itemprop="thumbnail" alt="Princess Chayanne"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x18 - 2015<br></i>Princess Chayanne</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/9.jpg" itemprop="contentUrl" data-size="742x750">
+                                <img src="img/gallery/girls/thumb/9.jpg" itemprop="thumbnail" alt="Rehearsal"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2015<br></i>Rehearsal</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/10.jpg" itemprop="contentUrl" data-size="546x750">
+                                <img src="img/gallery/girls/thumb/10.jpg" itemprop="thumbnail" alt="Wendy"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x18 - 2014<br></i>Wendy</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers fav" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/11.jpg" itemprop="contentUrl" data-size="536x750">
+                                <img src="img/gallery/girls/thumb/11.jpg" itemprop="thumbnail" alt="Woman in Flight"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x20 - 2015<br></i>Woman in Flight</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/12.jpg" itemprop="contentUrl" data-size="744x750">
+                                <img src="img/gallery/girls/thumb/12.jpg" itemprop="thumbnail" alt="Zoe"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2015<br></i>Zoe</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/13.jpg" itemprop="contentUrl" data-size="454x639">
+                                <img src="img/gallery/girls/thumb/13.jpg" itemprop="thumbnail" alt="Nutcracker Rehearsal"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x20 - 2015<br></i>Nutcracker Rehearsal</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/14.jpg" itemprop="contentUrl" data-size="457x639">
+                                <img src="img/gallery/girls/thumb/14.jpg" itemprop="thumbnail" alt="Emma Jane"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x18 - 2015<br></i>Emma Jane</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/15.jpg" itemprop="contentUrl" data-size="544x639">
+                                <img src="img/gallery/girls/thumb/15.jpg" itemprop="thumbnail" alt="Little Mouse"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x24 - 2015<br></i>Little Mouse</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/16.jpg" itemprop="contentUrl" data-size="633x639">
+                                <img src="img/gallery/girls/thumb/16.jpg" itemprop="thumbnail" alt="Petite Souris"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x16 - 2015<br></i>Petite Souris</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix dancers" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/girls/17.jpg" itemprop="contentUrl" data-size="639x468">
+                                <img src="img/gallery/girls/thumb/17.jpg" itemprop="thumbnail" alt="Gingerbread Girl" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x22 - 2015<br></i>Gingerbread Girl</h2>
+                            </figcaption>
+                        </figure>
+
+                    <!--SHIPS SECTION STARTS-->
+
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/1.jpg" itemprop="contentUrl" data-size="822x700">
+                                <img src="img/gallery/ships/thumb/1.jpg" itemprop="thumbnail" alt="Ship Number 1" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x28 - 2014<br></i>Two Tankers</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/2.jpg" itemprop="contentUrl" data-size="1065x700">
+                                <img src="img/gallery/ships/thumb/2.jpg" itemprop="thumbnail" alt="Ship Number 2" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>34x52  - 2013<br></i>Tanker and Helicopter</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/3.jpg" itemprop="contentUrl" data-size="767x700">
+                                <img src="img/gallery/ships/thumb/3.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>42x46 - 2013<br></i>Catherine Knutsen at Dusk</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/4.jpg" itemprop="contentUrl" data-size="1367x700">
+                                <img src="img/gallery/ships/thumb/4.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>18x34 - 2014<br></i>Tankers on a Calm Bay</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/5.jpg" itemprop="contentUrl" data-size="1122x700">
+                                <img src="img/gallery/ships/thumb/5.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>39x62 - 2011<br></i>Tanker</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/6.jpg" itemprop="contentUrl" data-size="870x700">
+                                <img src="img/gallery/ships/thumb/6.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>29x36 - 2013<br></i>Kometik Anchoring off Kelly's Island</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/7.jpg" itemprop="contentUrl" data-size="1053x700">
+                                <img src="img/gallery/ships/thumb/7.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x42 - 2014<br></i>Sea Rose and Supply Boats</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships fav" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/8.jpg" itemprop="contentUrl" data-size="1106x700">
+                                <img src="img/gallery/ships/thumb/8.jpg" itemprop="thumbnail" alt="Tanker in Conception Bay" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>18.5x29 - 2012<br></i>Tanker in Conception Bay</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships fav" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/9.jpg" itemprop="contentUrl" data-size="817x700">
+                                <img src="img/gallery/ships/thumb/9.jpg" itemprop="thumbnail" alt="Jasmine Knutsen" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>32x37 - 2012<br></i>Jasmine Knutsen</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/10.jpg" itemprop="contentUrl" data-size="1217x700">
+                                <img src="img/gallery/ships/thumb/10.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x35 - 2012<br></i>FPSO Sea Rose</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/12.jpg" itemprop="contentUrl" data-size="989x700">
+                                <img src="img/gallery/ships/thumb/12.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x28 - 2012<br></i>Pilot Boat in the Narrows</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/13.jpg" itemprop="contentUrl" data-size="993x700">
+                                <img src="img/gallery/ships/thumb/13.jpg" itemprop="thumbnail" alt="Ship Number 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>27x38 - 2012<br></i>Support Vessels Leaving St. John's</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships fav" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/14.jpg" itemprop="contentUrl" data-size="777x700">
+                                <img src="img/gallery/ships/thumb/14.jpg" itemprop="thumbnail" alt="Catherine Knutsen" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>33x37 - 2012<br></i>Catherine Knutsen</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/16.jpg" itemprop="contentUrl" data-size="992x700">
+                                <img src="img/gallery/ships/thumb/16.jpg" itemprop="thumbnail" alt="Stern" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>6.75x9.5 - 2012<br></i>Stern</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix ships" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/ships/15.jpg" itemprop="contentUrl" data-size="598x700">
+                                <img src="img/gallery/ships/thumb/15.jpg" itemprop="thumbnail" alt="Heather Knutsen at Anchor"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>56x48 - 2013<br></i>Heather Knutsen at Anchor</h2>
+                            </figcaption>
+                        </figure>
+
+                    <!--TRAIN SECTION STARTS-->
+
+                        <figure class="effect-honey mix trains fav" data-myorder="5" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/2.jpg" itemprop="contentUrl" data-size="891x700">
+                                <img src="img/gallery/trains/thumb/2.jpg" itemprop="thumbnail" alt="Train 2" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 2010<br></i>Western Stop</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="5" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/3.jpg" itemprop="contentUrl" data-size="830x700">
+                                <img src="img/gallery/trains/thumb/3.jpg" itemprop="thumbnail" alt="Train 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x28.5 - 2010<br></i>Through The Mountains</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/4.jpg" itemprop="contentUrl" data-size="884x700">
+                                <img src="img/gallery/trains/thumb/4.jpg" itemprop="thumbnail" alt="Train 3" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 2011<br></i>Vancouver Platform</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="7" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/5.jpg" itemprop="contentUrl" data-size="879x700">
+                                <img src="img/gallery/trains/thumb/5.jpg" itemprop="thumbnail" alt="Oil Car at Night" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 2010<br></i>Oil Car at Night</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/6.jpg" itemprop="contentUrl" data-size="881x700">
+                                <img src="img/gallery/trains/thumb/6.jpg" itemprop="thumbnail" alt="Sunrise Approach to Toronto" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 2010<br></i>Sunrise Approach to Toronto</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="9" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/7.jpg" itemprop="contentUrl" data-size="892x700">
+                                <img src="img/gallery/trains/thumb/7.jpg" itemprop="thumbnail" alt="Leaving Vancouver" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 2010<br></i>Leaving Vancouver</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains fav" data-myorder="10" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/8.jpg" itemprop="contentUrl" data-size="648x700">
+                                <img src="img/gallery/trains/thumb/8.jpg" itemprop="thumbnail" alt="Eastbound Freight"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>27x25 - 2010<br></i>Eastbound Freight</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="11" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/9.jpg" itemprop="contentUrl" data-size="885x700">
+                                <img src="img/gallery/trains/thumb/9.jpg" itemprop="thumbnail" alt="Krista in the Park Car" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x29 - 2010<br></i>Krista in the Park Car</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix trains" data-myorder="11" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/trains/10.jpg" itemprop="contentUrl" data-size="689x750">
+                                <img src="img/gallery/trains/thumb/10.jpg" itemprop="thumbnail" alt="Dome car to Toronto" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>30x28 - 2011<br></i>Dome Car to Toronto</h2>
+                            </figcaption>
+                        </figure>
+
+                    <!--FASHION SECTION STARTS-->
+
+                        <figure class="effect-honey mix archive fashion" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/2.jpg" itemprop="contentUrl" data-size="496x700">
+                                <img src="img/gallery/fashion/thumb/2.jpg" itemprop="thumbnail" alt="She looks like my friend Lynn Anne, Cleopatra we call her"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2008<br></i>She looks like my friend Lynn Anne, Cleopatra we call her.</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="5" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/5.jpg" itemprop="contentUrl" data-size="495x700">
+                                <img src="img/gallery/fashion/thumb/5.jpg" itemprop="thumbnail" alt="Oh! So beautiful. I want that Dress."/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2008<br></i>Oh! So beautiful. I want that Dress.</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/6.jpg" itemprop="contentUrl" data-size="496x700">
+                                <img src="img/gallery/fashion/thumb/6.jpg" itemprop="thumbnail" alt="I really want the pants"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2008<br></i>I really want the pants</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/8.jpg" itemprop="contentUrl" data-size="496x700">
+                                <img src="img/gallery/fashion/thumb/8.jpg" itemprop="thumbnail" alt="It reminds me of the wind, wind and the ocean"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2008<br></i>It reminds me of the wind; wind and the ocean.</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="9" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/9.jpg" itemprop="contentUrl" data-size="491x700">
+                                <img src="img/gallery/fashion/thumb/9.jpg" itemprop="thumbnail" alt="Look how skinny she is!"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2008<br></i>Look how skinny she is!</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="10" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/10.jpg" itemprop="contentUrl" data-size="767x700">
+                                <img src="img/gallery/fashion/thumb/10.jpg" itemprop="thumbnail" alt="Deep purple skirt by Ralph Lauren" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x22 - 2008<br></i>Deep purple skirt by Ralph Lauren</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/12.jpg" itemprop="contentUrl" data-size="452x700">
+                                <img src="img/gallery/fashion/thumb/12.jpg" itemprop="thumbnail" alt="Metallic Leather Coat; by Rick Owens"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>45.5x26.5 - 2009<br></i>Metallic Leather Coat by Rick Owens</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="13" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/13.jpg" itemprop="contentUrl" data-size="796x700">
+                                <img src="img/gallery/fashion/thumb/13.jpg" itemprop="thumbnail" alt="Blue Velvet Jacket by Jil Sander" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>14x16 - 2008<br></i>Blue Velvet Jacket by Jil Sander</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="14" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/14.jpg" itemprop="contentUrl" data-size="1026x700">
+                                <img src="img/gallery/fashion/thumb/14.jpg" itemprop="thumbnail" alt="Step Lightly, Vera Wang" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>21x31 - 2008<br></i>Step Lightly, Vera Wang</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="15" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/15.jpg" itemprop="contentUrl" data-size="511x700">
+                                <img src="img/gallery/fashion/thumb/15.jpg" itemprop="thumbnail" alt="Fog Dress by Calvin Klein"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>32x23 - 2008<br></i>Fog Dress by Calvin Klein</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="16" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/16.jpg" itemprop="contentUrl" data-size="871x700">
+                                <img src="img/gallery/fashion/thumb/16.jpg" itemprop="thumbnail" alt="Dress by Prada, Roses by Paul Iribe" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x25 - 2008<br></i>Dress by Prada, Roses by Paul Iribe</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="17" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/17.jpg" itemprop="contentUrl" data-size="516x700">
+                                <img src="img/gallery/fashion/thumb/17.jpg" itemprop="thumbnail" alt="Mechanical Dress by Hussein Chalayan"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>19x14 - 2008<br></i>Mechanical Dress by Hussein Chalayan</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="18" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/18.jpg" itemprop="contentUrl" data-size="879x700">
+                                <img src="img/gallery/fashion/thumb/18.jpg" itemprop="thumbnail" alt="Sun Drenched Orange Coast by Angelo Tarlazzi" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x20 - 2008<br></i>Sun Drenched Orange Coat by Angelo Tarlazzi</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="19" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/19.jpg" itemprop="contentUrl" data-size="576x700">
+                                <img src="img/gallery/fashion/thumb/19.jpg" itemprop="thumbnail" alt="Garden Party by Manish Arora"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>36x30 - 2008<br></i>Garden Party by Manish Arora</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="21" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/21.jpg" itemprop="contentUrl" data-size="942x700">
+                                <img src="img/gallery/fashion/thumb/21.jpg" itemprop="thumbnail" alt="Peony Girl Versace" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x31 - 2008<br></i>Peony Girl Versace</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="22" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/22.jpg" itemprop="contentUrl" data-size="555x700">
+                                <img src="img/gallery/fashion/thumb/22.jpg" itemprop="thumbnail" alt="Don't you think it looks a bit like meat?"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x16 - 2009<br></i>Don't you think it looks a bit like meat?</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="23" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/23.jpg" itemprop="contentUrl" data-size="431x700">
+                                <img src="img/gallery/fashion/thumb/23.jpg" itemprop="thumbnail" alt="That Chiffon is Gergeous"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>22.5x14 - 2009<br></i>That Chiffon is Gorgeous</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="24" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/24.jpg" itemprop="contentUrl" data-size="860x700">
+                                <img src="img/gallery/fashion/thumb/24.jpg" itemprop="thumbnail" alt="Gorgeous Jacket by Thierry Mugler" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x30 - 2008<br></i>Gorgeous Jacket by Thierry Mugler</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="25" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/25.jpg" itemprop="contentUrl" data-size="549x700">
+                                <img src="img/gallery/fashion/thumb/25.jpg" itemprop="thumbnail" alt="Moth Dress by Valentino"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x36 - 2009<br></i>Moth Dress by Valentino</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="26" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/26.jpg" itemprop="contentUrl" data-size="887x700">
+                                <img src="img/gallery/fashion/thumb/26.jpg" itemprop="thumbnail" alt="I want an Alexander McQueen dress" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x36 - 2009<br></i>I want an Alexander McQueen dress.</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="27" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/27.jpg" itemprop="contentUrl" data-size="562x700">
+                                <img src="img/gallery/fashion/thumb/27.jpg" itemprop="thumbnail" alt="It's Chanel"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>30x24 - 2009<br></i>It's Chanel</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="31" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/31.jpg" itemprop="contentUrl" data-size="554x700">
+                                <img src="img/gallery/fashion/thumb/31.jpg" itemprop="thumbnail" alt="Little girl in the forest"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>33x32 - 2007<br></i>Little Girl in the Forest</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="32" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/30.jpg" itemprop="contentUrl" data-size="459x700">
+                                <img src="img/gallery/fashion/thumb/30.jpg" itemprop="thumbnail" alt="When I go I'll wear my red skirt"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x16 - 2007<br></i>When I go I'll wear my red skirt.</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion fav" data-myorder="32" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/32.jpg" itemprop="contentUrl" data-size="554x700">
+                                <img src="img/gallery/fashion/thumb/32.jpg" itemprop="thumbnail" alt="Sun Dress"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>33x33 - 1998<br></i>Sun Dress</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="34" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/34.jpg" itemprop="contentUrl" data-size="883x700">
+                                <img src="img/gallery/fashion/thumb/34.jpg" itemprop="thumbnail" alt="Make me thinner, thinner" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x39 - 1995<br></i>Make me Thinner, Thinner</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="35" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/35.jpg" itemprop="contentUrl" data-size="785x700">
+                                <img src="img/gallery/fashion/thumb/35.jpg" itemprop="thumbnail" alt="Fashion 30"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>34x37 - 1995<br></i>Crossing</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="36" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/36.jpg" itemprop="contentUrl" data-size="1171x700">
+                                <img src="img/gallery/fashion/thumb/36.jpg" itemprop="thumbnail" alt="Fashion 30" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x38 - 1994<br></i>Trench</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="37" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/37.jpg" itemprop="contentUrl" data-size="694x700">
+                                <img src="img/gallery/fashion/thumb/37.jpg" itemprop="thumbnail" alt="Man Made Flowers"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>36x36 - 1998<br></i>Man Made Flowers</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="37" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/40.jpg" itemprop="contentUrl" data-size="653x872">
+                                <img src="img/gallery/fashion/thumb/40.jpg" itemprop="thumbnail" alt="A Man and his Car"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>36x27 - 1996<br></i>A Man and his Car</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive fashion" data-myorder="37" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/fashion/41.jpg" itemprop="contentUrl" data-size="1127x594">
+                                <img src="img/gallery/fashion/thumb/41.jpg" itemprop="thumbnail" alt="Barren Bride"class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>32x60 - 1998<br></i>Barren Bride</h2>
+                            </figcaption>
+                        </figure>
+
+                    <!--FLOWER SECTION STARTS-->
+
+                        <figure class="effect-honey mix archive flowers" data-myorder="1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/1.jpg" itemprop="contentUrl" data-size="878x700">
+                                <img src="img/gallery/flowers/thumb/1.jpg" itemprop="thumbnail" alt="Beautiful Pink Lillies" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x30 - 2004<br></i>Beautiful Pink Lillies</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/2.jpg" itemprop="contentUrl" data-size="559x700">
+                                <img src="img/gallery/flowers/thumb/2.jpg" itemprop="thumbnail" alt="Cut Rose"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x16 - 2005<br></i>Cut Rose</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/3.jpg" itemprop="contentUrl" data-size="995x700">
+                                <img src="img/gallery/flowers/thumb/3.jpg" itemprop="thumbnail" alt="Eve's Tulip" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>22.5x16 - 2006<br></i>Eve's Tulip</h2>
+                            </figcaption>
+                        </figure>
+                         <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/14.jpg" itemprop="contentUrl" data-size="534x750">
+                                <img src="img/gallery/flowers/thumb/14.jpg" itemprop="thumbnail" alt="Tulips at Government House"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>30x21.5 - 2004<br></i>Tulips at Government House</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="7" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/7.jpg" itemprop="contentUrl" data-size="903x700">
+                                <img src="img/gallery/flowers/thumb/7.jpg" itemprop="thumbnail" alt="The Sun for Anne" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>30x39 - 2005<br></i>The Sun for Anne</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/8.jpg" itemprop="contentUrl" data-size="438x700">
+                                <img src="img/gallery/flowers/thumb/8.jpg" itemprop="thumbnail" alt="Three Yellow Lillies"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>38.5x24.5 - 2005<br></i>Three Yellow Lillies</h2>
+                            </figcaption>
+                        </figure>
+                         <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/9.jpg" itemprop="contentUrl" data-size="786x578">
+                                <img src="img/gallery/flowers/thumb/9.jpg" itemprop="thumbnail" alt="Little Tulip" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>16x22.5 - 2007<br></i>Little Tulip</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/10.jpg" itemprop="contentUrl" data-size="786x653">
+                                <img src="img/gallery/flowers/thumb/10.jpg" itemprop="thumbnail" alt="Rose Heart in Belleek" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x24 - 2006<br></i>Rose Heart in Belleek</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/11.jpg" itemprop="contentUrl" data-size="546x700">
+                                <img src="img/gallery/flowers/thumb/11.jpg" itemprop="thumbnail" alt="Little Rose in my Window"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>20x16 - 2005<br></i>Little Rose in my Window</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/12.jpg" itemprop="contentUrl" data-size="445x750">
+                                <img src="img/gallery/flowers/thumb/12.jpg" itemprop="thumbnail" alt="My Sister and I"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x17 - 2004<br></i>My Sister and I</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/13.jpg" itemprop="contentUrl" data-size="465x750">
+                                <img src="img/gallery/flowers/thumb/13.jpg" itemprop="thumbnail" alt="Broken Tulip"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>47x30 - 2005<br></i>Broken Tulip</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers fav" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/15.jpg" itemprop="contentUrl" data-size="750x656">
+                                <img src="img/gallery/flowers/thumb/15.jpg" itemprop="thumbnail" alt="Demitasse and Tulip" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>19.5x22.5 - 2010<br></i>Demitasse and Tulip</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers fav" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/16.jpg" itemprop="contentUrl" data-size="750x707">
+                                <img src="img/gallery/flowers/thumb/16.jpg" itemprop="thumbnail" alt="Drooping Peonie" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x25.5 - 2010<br></i>Drooping Peonie</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/17.jpg" itemprop="contentUrl" data-size="750x637">
+                                <img src="img/gallery/flowers/thumb/17.jpg" itemprop="thumbnail" alt="Fresia, Tulip and Espresso Cup" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x28.5 - 2010<br></i>Fresia, Tulip and Espresso Cup</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/18.jpg" itemprop="contentUrl" data-size="750x580">
+                                <img src="img/gallery/flowers/thumb/18.jpg" itemprop="thumbnail" alt="Iris on my Grandmother's Tea Cup" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x30 - 2010<br></i>Iris on my Grandmother's Tea Cup</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/19.jpg" itemprop="contentUrl" data-size="746x750">
+                                <img src="img/gallery/flowers/thumb/19.jpg" itemprop="thumbnail" alt="A Little Tulip in a Little Cup" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>14x14 - 2010<br></i>A Little Tulip in a Little Cup</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/20.jpg" itemprop="contentUrl" data-size="744x750">
+                                <img src="img/gallery/flowers/thumb/20.jpg" itemprop="thumbnail" alt="Mrs. Goshue's Garden"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>21x21 - 2010<br></i>Mrs. Goshue's Garden</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers fav" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/21.jpg" itemprop="contentUrl" data-size="561x750">
+                                <img src="img/gallery/flowers/thumb/21.jpg" itemprop="thumbnail" alt="Sun Umbrella"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31.5x24 - 2010<br></i>Sun Umbrella</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/22.jpg" itemprop="contentUrl" data-size="534x750">
+                                <img src="img/gallery/flowers/thumb/22.jpg" itemprop="thumbnail" alt="Tiny Orchid"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x20 - 2014<br></i>Tiny Orchid</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/23.jpg" itemprop="contentUrl" data-size="639x508">
+                                <img src="img/gallery/flowers/thumb/23.jpg" itemprop="thumbnail" alt="Calla Lilies" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>24x30 - 2003<br></i>Calla Lilies</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive flowers" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/flowers/24.jpg" itemprop="contentUrl" data-size="683x422">
+                                <img src="img/gallery/flowers/thumb/24.jpg" itemprop="thumbnail" alt="Tulipa Erotica" class="land"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x42 - 1999<br></i>Tulipa Erotica</h2>
+                            </figcaption>
+                        </figure>
+                <!--WOMEN SECTION STARTS-->
+                        <figure class="effect-honey mix archive women fav" data-myorder="1" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/1.jpg" itemprop="contentUrl" data-size="1054x700">
+                                <img src="img/gallery/women/thumb/1.jpg" itemprop="thumbnail" alt="Fire and Water" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>26x39 - 2002<br></i>Fire and Water</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/3.jpg" itemprop="contentUrl" data-size="668x700">
+                                <img src="img/gallery/women/thumb/3.jpg" itemprop="thumbnail" alt="My Latest Sitter"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28x22 - 2002<br></i>My Latest Sitter</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="5" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/5.jpg" itemprop="contentUrl" data-size="1266x700">
+                                <img src="img/gallery/women/thumb/5.jpg" itemprop="thumbnail" alt="Scream Angela!" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23.5x42.5 - 2001<br></i>Scream Angela!</h2>
+                            </figcaption>
+                        </figure>
+                         <figure class="effect-honey mix archive women" data-myorder="6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/6.jpg" itemprop="contentUrl" data-size="1066x700">
+                                <img src="img/gallery/women/thumb/6.jpg" itemprop="thumbnail" alt="Splashing in the Cove" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>37x56 - 2002<br></i>Splashing in the Cove</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="7" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/7.jpg" itemprop="contentUrl" data-size="1055x700">
+                                <img src="img/gallery/women/thumb/7.jpg" itemprop="thumbnail" alt="This is Lori" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23.5x35 - 2001<br></i>This is Lori</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/8.jpg" itemprop="contentUrl" data-size="1048x700">
+                                <img src="img/gallery/women/thumb/8.jpg" itemprop="thumbnail" alt="Walking in Healey's Pond" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>31x46 - 2002<br></i>Walking in Healey's Pond</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women fav" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/9.jpg" itemprop="contentUrl" data-size="750x583">
+                                <img src="img/gallery/women/thumb/9.jpg" itemprop="thumbnail" alt="Bird" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>32x41 - 2003<br></i>Bird</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/10.jpg" itemprop="contentUrl" data-size="476x750">
+                                <img src="img/gallery/women/thumb/10.jpg" itemprop="thumbnail" alt="Carolyn at Beachy Cove"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>39x25 - 2001<br></i>Carolyn at Beachy Cove</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/11.jpg" itemprop="contentUrl" data-size="528x750">
+                                <img src="img/gallery/women/thumb/11.jpg" itemprop="thumbnail" alt="Freydis Eiriksdottir One"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>9.5x6.75 - 2009<br></i>Freydis Eiriksdottir One</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/12.jpg" itemprop="contentUrl" data-size="601x750">
+                                <img src="img/gallery/women/thumb/12.jpg" itemprop="thumbnail" alt="Girl with Long Hair"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x29 - 2003<br></i>Girl with Long Hair</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/13.jpg" itemprop="contentUrl" data-size="750x504">
+                                <img src="img/gallery/women/thumb/13.jpg" itemprop="thumbnail" alt="Kathryn on a Hot Summer Day" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>28.5x42 - 2001<br></i>Kathryn on a Hot Summer Day</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/14.jpg" itemprop="contentUrl" data-size="594x750">
+                                <img src="img/gallery/women/thumb/14.jpg" itemprop="thumbnail" alt="Nine months to Robyn"/>
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>30x24 - 2002<br></i>Nine months to Robyn</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women fav" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/15.jpg" itemprop="contentUrl" data-size="719x596">
+                                <img src="img/gallery/women/thumb/15.jpg" itemprop="thumbnail" alt="Surf" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x28 - 2001<br></i>Surf</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/16.jpg" itemprop="contentUrl" data-size="750x569">
+                                <img src="img/gallery/women/thumb/16.jpg" itemprop="thumbnail" alt="Venus" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>36x47 - 1999<br></i>Venus</h2>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-honey mix archive women" data-myorder="8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="img/gallery/women/17.jpg" itemprop="contentUrl" data-size="639x347">
+                                <img src="img/gallery/women/thumb/17.jpg" itemprop="thumbnail" alt="My Religion" class="land" />
+                            </a>
+                            <figcaption itemprop="caption description">
+                                <h2><i>23x42 - 2000<br></i>My Religion</h2>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    </div>
+                    <!-- End Gallery Filter -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12">
+                        <a name="about"></a>
+                        <h2>About Barbara</h2>
+                            <p>I don’t love to paint. It’s hard work. I have to make myself go to the studio.
+                        Because of this, my work is well thought out, not spontaneous or
+                        experimental. Whatever I’m painting has got to be worth it, in my eyes, or
+                        else it’s a waste of time. I think it’s fair to say that much of my work
+                        happens not in my studio, but in my head while I’m walking, or driving. As
+                        a result I tend to plan and group my work thematically. I will hit upon an
+                        idea and decide to explore it through images of one specific type.
+                        </p>
+                        <p>Over the past 29 years I have explored the ideas of feminism and beauty
+                        through images of fashion models. I have looked at the strength of women
+                        by painting my friends, laughing and happy. In 2004 I painted flowers,
+                        sliced in two, trapped in vases, both drooping and beautiful as a way to
+                        interpret the end of my marriage. Then came trains. I love trains. I love their
+                        lines. It was a chance for me to get outside myself too, and deal with larger
+                        issues of transport, trade, commerce and engineering. To discuss the new
+                        reality of Newfoundland as a “have” province I began a series of paintings
+                        of ships; tankers mostly, alternately threatening and beautiful. Most recently
+                        I delved into my own, private history with paintings of little girls, exploring
+                        memory, loss and expectation.</p>
+
+                        <p>The things I have chosen to paint over this time have been varied. There are
+                        two main constants though. Beauty is one. I want to be surrounded by
+                        beautiful things, live in a beautiful place. Making beautiful paintings is part
+                        of that. Beauty is good for my soul. There is plenty of ugliness in the world
+                        and I believe that very serious and difficult things can be discussed through
+                        beauty.</p>
+
+                        <p>The other constant is point of view. All my work is about me really. It’s
+                        about how I see, what I see. I believe all art is more about the artist than
+                        anything else. Because of that my work may sometimes be obtuse. I never
+                        want to hit someone over the head with how I feel. I’d rather they bring to it
+                        what they see while knowing, in my heart, that I’m in there.</p>
+
+                        <a href="/BarbaraPratt.pdf" target="_blank">View Résumé</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Content-->
+
+        <!--Footer-->
+        <section id="footer" data-speed="2" data-type="background">
+            <div class="row footer">
+                <div class="container">
+                     <div class="col-sm-3 col-xs-12 social">
+                        <a name="contact"></a>
+                        <h2>Contact</h2>
+                        <p>
+                            <strong>Barbara Pratt</strong><br>
+                            <a href="mailto:barbarapratt.bp@gmail.com">barbarapratt.bp@gmail.com</a>
+                        </p>
+                        <a href="https://www.facebook.com/pages/Barbara-Pratt/1623217377896325" target="_blank">
+                            <img src="img/facebook.png" alt="Facebook" />
+                        </a>
+                        <a href="https://plus.google.com/104971025870557032950/posts" target="_blank">
+                            <img src="img/googleplus.png" alt="Google Plus" />
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-4">
+                        <h2 class="footHeader">Galleries</h2>
+                        <p>
+                            <strong>Emma Butler Gallery</strong><br>
+                            11 George Street West<br>
+                            St.John's, NL<br>
+                            Canada A1C 6K2<br>
+                            Phone: (709) 739-7111<br>
+                            <a href="http://www.emmabutler.com">www.emmabutler.com</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-4">
+                        <h2 class="footHeader">&nbsp;</h2>
+                        <p>
+                            <strong>Galerie de Bellefeuille</strong><br>
+                            1367 Greene Avenue<br>
+                            Toronto, ON<br>
+                            Montreal, Quebec, H3Z 2A8<br>
+                            Phone: (514) 933-4406<br>
+                            <a href="mailto:art@debellefeuille.com">art@debellefeuille.com</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-4">
+                        <!--<h2 class="footHeader">&nbsp;</h2>
+                            <div class="plumLogo">
+                                <a href="http://plumcreativeworks.com" title="Website designed and developed by Plum Creative Works" target="_blank">
+                                    <img class="plumHidden" src="img/plumHover.png"/>
+                                    <img class="plumMain" src="img/plum.png" />
+                                </a>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Footer-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.mixitup.min.js"></script>
+        <script src="photoswipe/photoswipe.min.js"></script>
+        <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#bannerMobile').html('<img src="img/'+theme+'BGm.jpg" alt="Hidden" />');
+            });
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-46795099-3', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe.
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides.
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <!--<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>-->
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
